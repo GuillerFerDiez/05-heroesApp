@@ -27,8 +27,9 @@
             <mat-icon>menu</mat-icon>
         </button>
         <span class="spacer"></span>
+        <span>{{auth.usuario}}</span>
         <!-- Defino esta clase en styles.css, es para que se vea a la derecha.-->
-        <button mat-button>
+        <button mat-button (click)="logout()">
             Logout
         </button>
     </mat-toolbar>
